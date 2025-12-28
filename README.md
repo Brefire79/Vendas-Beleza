@@ -1,57 +1,73 @@
-# Vendas Beleza
+# Welcome to your Lovable project
 
-PWA (offline) simples para registrar pedidos, pagamentos e gerar um relatório rápido.
+## Project info
 
-## Requisitos
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-- Node.js 18+ (recomendado 20+)
-- npm
+## How can I edit this code?
 
-## Rodar localmente
+There are several ways of editing your application.
 
-```bash
-npm install
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-Acesse: http://localhost:5173
+**Edit a file directly in GitHub**
 
-## Build
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-```bash
-npm run build
-npm run preview
-```
+**Use GitHub Codespaces**
 
-## PWA
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-- Manifest: `public/manifest.webmanifest`
-- Service Worker: `public/sw.js`
+## What technologies are used for this project?
 
-> Observação: os dados são salvos em **LocalStorage** (somente neste navegador/dispositivo).
+This project is built with:
 
-## Deploy no Netlify
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-### Opção 1: Importar do GitHub
+## How can I deploy this project?
 
-1. No Netlify: **Add new site → Import an existing project**.
-2. Selecione este repositório.
-3. Configure:
-   - **Build command**: `npm run build`
-   - **Publish directory**: `dist`
-4. Deploy.
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
 
-### Opção 2: Netlify CLI
+## Can I connect a custom domain to my Lovable project?
 
-```bash
-npm install
-npm run build
-npx netlify deploy --prod --dir=dist
-```
+Yes, you can!
 
-### SPA Redirect
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-A configuração de SPA (para rotas do React) está em:
-
-- `public/_redirects`
-- `netlify.toml`
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
